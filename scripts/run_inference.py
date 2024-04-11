@@ -17,10 +17,12 @@ See https://hydra.cc/docs/advanced/hydra-command-line-flags/ for more options.
 
 import re
 import os, time, pickle
+import sys
 import torch
 from omegaconf import OmegaConf
 import hydra
 import logging
+sys.path.append(os.path.abspath('.'))
 from rfdiffusion.util import writepdb_multi, writepdb
 from rfdiffusion.inference import utils as iu
 from hydra.core.hydra_config import HydraConfig

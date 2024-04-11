@@ -18,11 +18,11 @@ file=scripts/run_inference.py
 # binder test
 python $file \
     inference.input_pdb=examples/input_pdbs/insulin_target.pdb \
-    'contigmap.contigs=[A1-150/0 10-20]' \
+    'contigmap.contigs=[A1-150/0 6-9]' \
     'ppi.hotspot_res=[A59,A83,A91]' \
     denoiser.noise_scale_ca=0 \
     denoiser.noise_scale_frame=0 \
-    inference.output_prefix=test_outputs/binder_insulin_target/binder_insulin_target \
-    inference.num_designs=10 \
+    inference.output_prefix=test_outputs/binder_insulin_target2/binder_insulin_target3 \
+    inference.num_designs=1 \
     inference.model_directory_path=/mnt/nas1/models/RFdiffusion \
     2>&1  </dev/null | tee $file.log
