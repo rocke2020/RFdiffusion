@@ -1,6 +1,7 @@
 # Usage
 
 ## install
+```
 create --name RFdiffusion -y python=3.10
 
 pip install -q --no-cache-dir \
@@ -26,3 +27,4 @@ conda install -y nvidia/label/cuda-11.6.2::libcufile
 conda install -y nvidia/label/cuda-11.6.2::libcusparse
 conda install -y nvidia/label/cuda-11.6.2::cuda-cudart
 conda install -y nvidia/label/cuda-11.6.2::cuda-cudart-dev
+```
