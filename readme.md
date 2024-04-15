@@ -16,10 +16,9 @@ hydra-core==1.3.2 \
 pyrsistent==0.19.3
 
 pip install -q --no-cache-dir env/SE3Transformer
-#pip install --no-cache-dir . --no-deps
 
-export CONDA_OVERRIDE_CUDA="11.6.2";
-#export CONDA_ALWAYS_YES=yes;
+export CONDA_OVERRIDE_CUDA="11.6.2"
+#export CONDA_ALWAYS_YES=yes
 conda install -y nvidia/label/cuda-11.6.2::cuda-toolkit
 conda install -y nvidia/label/cuda-11.6.2::cuda-tools
 conda install -y nvidia/label/cuda-11.6.2::cuda-nvrtc
